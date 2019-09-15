@@ -12,6 +12,7 @@ deploy:
     access_key_id: "AKIA43SPPSQCK65MBLJV"
     secret_access_key: "${S3_KEY}"
     bucket: "mjclyde.com"
+    region: us-west-2
     skip_cleanup: true
     acl: public_read
     local_dir: dist
