@@ -9,9 +9,9 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: AKIA43SPPSQCK65MBLJV
-    secret_access_key: ${S3_KEY}
-    bucket: mjclyde.com
+    access_key_id: "AKIA43SPPSQCK65MBLJV"
+    secret_access_key: "${S3_KEY}"
+    bucket: "mjclyde.com"
     skip_cleanup: true
     acl: public_read
     local_dir: dist
