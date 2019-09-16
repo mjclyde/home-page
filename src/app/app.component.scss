@@ -5,12 +5,45 @@
   right: 0;
   display: flex;
   align-items: center;
+  height: 70px;
 
   .branding {
     font-size: 20pt;
     font-weight: 100;
-    margin: 20px;
-    color: #AFAFAF;
+    margin: 0 20px;
+    color: #666666;
+  }
+
+  .social-link {
+    margin: 0 .5rem;
+
+    img {
+      width: 30px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .links-container {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #444444;
+      font-size: 14pt;
+      padding: .5rem 1rem;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
   }
 }
 
@@ -35,7 +68,7 @@
     padding: 1rem 2rem;
     background-color: #222222;
     color: #e4e4e4;
-    font-family: monospace;
+    font-family: 'Fira Code', monospace;
     font-size: 14pt;
     border-radius: 10px;
     border: 2px solid #5a5a5a;
