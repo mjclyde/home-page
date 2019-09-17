@@ -1,3 +1,6 @@
+
+@import "../styles";
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -12,6 +15,10 @@
     font-weight: 100;
     margin: 0 20px;
     color: #666666;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16pt;
+    }
   }
 
   .social-link {
@@ -19,6 +26,10 @@
 
     img {
       width: 30px;
+
+      @include media-breakpoint-down(sm) {
+        width: 20px;
+      }
     }
 
     &:hover {
@@ -42,6 +53,11 @@
 
       &:hover {
         background-color: whitesmoke;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 0.5rem;
+        font-size: 12pt;
       }
     }
   }
